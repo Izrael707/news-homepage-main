@@ -3,7 +3,7 @@ export default function Component1() {
     <div className="mt-4">
       <img src="/images/image-web-3-mobile.jpg" alt="web-3-mobile" />
       <div className="my-2">
-        <p className="font-bold text-5xl my-2">The Bright Future of Web 3.0?</p>
+        <h1 className="font-bold text-5xl my-2">The Bright Future of Web 3.0?</h1>
         <div>
           <p className="text-neutral-600 text-lg font-medium my-2">
             We dive into the next evolution of the web that claims to put the

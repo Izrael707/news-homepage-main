@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Component1 from "../components/Component1";
+import Component2 from "../components/Component2";
 import Navbar from "../components/Navbar";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       </header>
       <main>
         <Component1 />
+        <Component2 />
         {/* <div class="">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
