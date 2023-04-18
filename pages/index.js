@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Component1 from "../components/Component1";
 import Navbar from "../components/Navbar";
-import Component2 from "../components/Component1";
+import Component2 from "../components/Component2";
 
 export default function App() {
   return (
-    <div className="h-screen p-4">
+    <div className="h-screen p-4 relative">
       <Head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,28 +22,37 @@ export default function App() {
       <header>
         <Navbar />
       </header>
-      <main>
-        <div className="mt-4">
-          <img src="/images/image-web-3-mobile.jpg" alt="web-3-mobile" />
-          <div className="my-2">
-            <h1 className="font-bold text-5xl my-2">
-              The Bright Future of Web 3.0?
-            </h1>
-            <div>
-              <p className="text-neutral-600 text-lg font-medium my-2">
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-              <button className="px-12 py-4 text-lg my-2 bg-red-500 uppercase font-medium text-white tracking-widest">
-                Read more
-              </button>
-            </div>
+      <main className="lg:grid grid-cols-3 h-screen gap-x-8">
+        <div className="mt-4 col-span-2 lg:grid lg:gap-x-4 grid-cols-2">
+          <div className="col-span-2 lg:mb-4">
+            <img
+              src="/images/image-web-3-mobile.jpg"
+              alt="web-3"
+              className="lg:hidden w-full"
+            />
+            <img
+              src="/images/image-web-3-desktop.jpg"
+              alt="web-3"
+              className="lg:block hidden h-full"
+            />
+          </div>
+          <h1 className="font-bold text-5xl lg:text-6xl xl:text-7xl my-2 col-span-1">
+            The Bright Future of Web 3.0?
+          </h1>
+          <div className="col-span-1">
+            <p className="text-neutral-600 text-lg xl:text-2xl font-medium my-2 lg:mb-4">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button className="px-12 py-4 text-lg xl:text-xl my-2 bg-red-500 uppercase font-medium text-white tracking-widest hover:bg-red-600 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300">
+              Read more
+            </button>
           </div>
         </div>
 
-        <div className="p-4 mt-16 bg-slate-950 text-white">
-          <h1 className="text-4xl font-bold text-orange-400 mb-6">New</h1>
+        <div className="p-4 mt-16 lg:mt-4 bg-slate-950 text-white col-span-1 grid">
+          <h1 className="text-4xl xl:text-5xl font-bold text-orange-400 mb-6">New</h1>
           <Component1
             title="Hydrogen VS Electric Cars"
             subtitle="Will hydroen-fueled cars ever catch up to EVs?"
@@ -60,7 +69,7 @@ export default function App() {
           />
         </div>
 
-        <div className="flex flex-col gap-y-4 my-12">
+        <div className="flex flex-col gap-y-4 lg:grid lg:gap-x-4 grid-cols-3 my-12 col-span-3">
           <Component2
             imgsrc="/images/image-retro-pcs.jpg"
             id="01"
