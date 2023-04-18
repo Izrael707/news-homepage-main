@@ -91,14 +91,14 @@ export default function App() {
             subtitle="How the pandemic has sparked fresh opportunities."
           />
         </div>
+        <div class="text-center text-2xl text-neutral-500">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by <a href="github.com/izrael707">Izrael707</a>.
+        </div>
       </main>
-      <div class="text-center">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="github.com/izrael707">Izrael707</a>.
-      </div>
     </div>
   );
 }
