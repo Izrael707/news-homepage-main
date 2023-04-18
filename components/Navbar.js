@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function SideBar({setHide}) {
+function SideBar({ setHide }) {
   return (
     <div>
       <div className="grid gap-y-20">
@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="absolute z-10 bg-white top-0 right-0 w-2/3 h-screen p-4">
-            <SideBar setHide={setHide} /> 
+            <SideBar setHide={setHide} />
           </div>
         )}
       </nav>

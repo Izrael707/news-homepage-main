@@ -52,7 +52,9 @@ export default function App() {
         </div>
 
         <div className="p-4 mt-16 lg:mt-4 bg-slate-950 text-white col-span-1 grid">
-          <h1 className="text-4xl xl:text-5xl font-bold text-orange-400 mb-6">New</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold text-orange-400 mb-6">
+            New
+          </h1>
           <Component1
             title="Hydrogen VS Electric Cars"
             subtitle="Will hydroen-fueled cars ever catch up to EVs?"
@@ -89,14 +91,14 @@ export default function App() {
             subtitle="How the pandemic has sparked fresh opportunities."
           />
         </div>
-        {/* <div class="">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-            Frontend Mentor
-          </a>
-          . Coded by <a href="#">Izrael707</a>.
-        </div> */}
       </main>
+      <div class="text-center">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="github.com/izrael707">Izrael707</a>.
+      </div>
     </div>
   );
 }
