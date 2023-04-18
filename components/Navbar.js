@@ -38,10 +38,10 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="hidden lg:flex">
-          <p className="text-2xl me-5 font-medium">Home</p>
-          <p className="text-2xl me-5 font-medium">New</p>
-          <p className="text-2xl me-5 font-medium">Popular</p>
-          <p className="text-2xl me-5 font-medium">Trending</p>
+          <p className="text-2xl me-6 font-medium">Home</p>
+          <p className="text-2xl me-6 font-medium">New</p>
+          <p className="text-2xl me-6 font-medium">Popular</p>
+          <p className="text-2xl me-6 font-medium">Trending</p>
           <p className="text-2xl font-medium">Categories</p>
         </div>
         {hide ? (
